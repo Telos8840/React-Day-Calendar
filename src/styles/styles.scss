@@ -1,0 +1,91 @@
+@import '../../node_modules/foundation-sites/scss/foundation';
+
+@include foundation-flex-grid;
+@include foundation-flex-classes;
+@include foundation-everything(true);
+
+body {
+  background: #f5f5f5;
+}
+
+.row {
+  max-width: 100%;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.event-text {
+  color: #4A6DA8;
+  font-weight: 600;
+}
+
+.event-border {
+  border-left: #4A6DA8 4px solid;
+}
+
+.time-slot {
+  flex: 1 0 0;
+  min-height: 45px;
+  padding: 0 5px;
+}
+
+.day-slot {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.react-calendar {
+  box-sizing: border-box;
+  height: 100%;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+}
+
+.calendar-view {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+
+.calendar-content {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 1300px;
+  overflow-y: hidden;
+
+}
+
+.calendar-flex {
+  flex-basis: 100%;
+  max-width: 100%;
+  display: inline-flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.calendar-event {
+  position: absolute;
+  display: flex;
+  max-height: 100%;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.time-gutter {
+  flex-wrap: nowrap !important
+}
+
+
