@@ -1,4 +1,5 @@
 # React Day Calendar
+Day calendar view written in ReactJS
 
 ## Getting Started
 1. **Clone the project**. `git clone https://github.com/telos8840/react-day-calendar.git`.  
